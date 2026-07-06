@@ -3,4 +3,5 @@
 __pycache__/
 *.pyc
 *.log
+crontab.backup.*
 report_static/
