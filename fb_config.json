@@ -1,0 +1,10 @@
+{
+  "upload_base_url": "http://47.253.53.210:9000",
+  "media_source_code": "fb",
+  "app_store_id_to_package": {
+    "6756252243": "com.aquawood.cleaner"
+  },
+  "campaign_name_to_package": {
+    "AI-Cleaner": "com.aquawood.cleaner"
+  }
+}

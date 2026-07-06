@@ -55,3 +55,54 @@ Token / access diagnostic:
 ```bash
 ./fb_ads_report.py diagnose
 ```
+
+## Spend Upload
+
+Facebook spend upload follows the same server contract as the Flex `UA`
+Applovin uploader:
+
+```json
+{
+  "rows": [
+    {
+      "stat_date": "2026-07-06",
+      "package_name": "com.aquawood.cleaner",
+      "media_source_code": "facebook",
+      "installs": 0,
+      "spend": 41.05
+    }
+  ]
+}
+```
+
+Run a dry run:
+
+```bash
+./fetch_facebook.py 2026-07-06 --dry-run
+```
+
+Fetch and upload:
+
+```bash
+./fetch_facebook.py 2026-07-06
+```
+
+The upload endpoint is `http://47.253.53.210:9000/bulk_spend_upload/`.
+If upload times out on shanshui, allow outbound access from the shanshui
+server to `47.253.53.210:9000`; Flex UA can already reach this endpoint.
+
+Daily upload for yesterday and the day before yesterday:
+
+```bash
+./fb_daily.sh
+```
+
+`fb_daily.sh` uploads the last 4 completed Beijing-calendar days:
+yesterday, 2 days ago, 3 days ago, and 4 days ago. This allows late Meta
+conversion attribution to correct recent rows through normal upserts.
+
+Cron template:
+
+```cron
+36 6 * * * /usr/bin/flock -n /tmp/fb_ads_report.lock /home/weina/FB_Ads_Report/fb_daily.sh > /home/weina/FB_Ads_Report/run_fb_daily.log 2>&1
+```

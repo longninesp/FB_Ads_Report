@@ -1,0 +1,9 @@
+# FB Ads Report cron template.
+#
+# Install with:
+#   crontab cronjob
+#
+# Runs daily at 06:36 Beijing/Singapore server time.
+# The script uploads yesterday through 4 days ago, using flock to avoid overlap.
+
+36 6 * * * /usr/bin/flock -n /tmp/fb_ads_report.lock /home/weina/FB_Ads_Report/fb_daily.sh > /home/weina/FB_Ads_Report/run_fb_daily.log 2>&1
