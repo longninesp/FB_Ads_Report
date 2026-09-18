@@ -1,0 +1,88 @@
+{
+  "source": {
+    "file": "export_20260918_1953.xlsx",
+    "sha256": "5a967dd2c83c9db9df09ba8adc5ad58ea37db92bae6dd01f1dd6646234de80dc",
+    "sheet": "Sheet1",
+    "columns": 422,
+    "rows": 31,
+    "inferred_ad_account_ids": [
+      "1761778028299301"
+    ]
+  },
+  "summary": {
+    "campaigns": 1,
+    "ad_sets": 1,
+    "ads": 31,
+    "active_ads": 30,
+    "paused_ads": 1,
+    "creative_types": {
+      "Video Page Post Ad": 20,
+      "Link Page Post Ad": 11
+    }
+  },
+  "campaigns": [
+    {
+      "campaign_id": "120249543819510430",
+      "raw_config": {
+        "Campaign ID": "cg:120249543819510430",
+        "Campaign Name": "KP_ios_AI iPhone Storage Cleaner_Tyler_0901",
+        "Campaign Status": "ACTIVE",
+        "Campaign Objective": "应用推广",
+        "Buying Type": "AUCTION",
+        "Campaign Daily Budget": "300",
+        "Campaign Bid Strategy": "Highest volume or value",
+        "Campaign Start Time": "09/01/2026 7:35:15 am",
+        "New Objective": "Yes",
+        "Buy With Prime Type": "NONE",
+        "Is Budget Scheduling Enabled For Campaign": "No",
+        "Campaign High Demand Periods": "[]",
+        "Buy With Integration Partner": "NONE"
+      }
+    }
+  ],
+  "ad_sets": [
+    {
+      "ad_set_id": "120249543819490430",
+      "campaign_id": "120249543819510430",
+      "raw_config": {
+        "Ad Set ID": "c:120249543819490430",
+        "Ad Set Run Status": "ACTIVE",
+        "Ad Set Lifetime Impressions": "0",
+        "Ad Set Name": "0901",
+        "Ad Set Time Start": "09/01/2026 7:35:15 am",
+        "Destination Type": "UNDEFINED",
+        "Use Accelerated Delivery": "No",
+        "Is Budget Scheduling Enabled For Ad Set": "No",
+        "Ad Set High Demand Periods": "[]",
+        "Link Object ID": "o:105002011916079",
+        "Optimized Event": "PURCHASE",
+        "Link": "http://itunes.apple.com/app/id6756252243",
+        "Application ID": "x:3357661051060397",
+        "Object Store URL": "http://itunes.apple.com/app/id6756252243",
+        "Countries": "US",
+        "Location Types": "home, recent",
+        "Age Min": "18",
+        "Age Max": "65",
+        "Advantage Audience": "1",
+        "Individual Setting": "age: On, gender: On",
+        "Age Range": "18, 65",
+        "Targeting Optimization": "expansion_all",
+        "User Device": "iPad, iPhone, iPod",
+        "User Operating System": "iOS",
+        "User OS Version": "14.0_and_above",
+        "Brand Safety Inventory Filtering Levels": "FACEBOOK_RELAXED, AN_RELAXED",
+        "Optimization Goal": "OFFSITE_CONVERSIONS",
+        "Attribution Spec": "[{\"event_type\":\"CLICK_THROUGH\",\"window_days\":7}]",
+        "Billing Event": "IMPRESSIONS",
+        "Regional Regulated Categories": "VOLUNTARY_VERIFICATION"
+      }
+    }
+  ],
+  "creation_notes": {
+    "default_creation_status": "PAUSED",
+    "currency_amounts_require_account_currency_confirmation": true,
+    "placements_blank_means_preserve_or_confirm_automatic_placements": true,
+    "asset_files_embedded_in_source": false,
+    "reuse_existing_asset_ids_requires_access_to_source_ad_account": true
+  }
+}
